@@ -1,24 +1,19 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Snake Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Quiz App</title>
 </head>
 <body>
-    <div id="game-board"></div>
-    <div>
-        <button id="start-button">Start Game</button>
-        <button id="stop-button">Stop Game</button>
-        <div id="controls">
-            <button id="up-button">Up</button>
-            <button id="down-button">Down</button>
-            <button id="left-button">Left</button>
-            <button id="right-button">Right</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="quiz-container">
+    <div id="question" class="question"></div>
+    <div id="choices" class="choices"></div>
+    <button id="submit" onclick="submitAnswer()">Submit Answer</button>
+    <p id="score" style="display:none;">Your Score is: <span id="score-value">0</span></p>
+  </div>
+
+  <script src="quiz.js"></script>
 </body>
 </html>
